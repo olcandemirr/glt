@@ -1,0 +1,174 @@
+/* app/events/events.module.css */
+
+.main {
+  overflow: hidden; /* İçeriğin taşmasını önler */
+}
+.container {
+  padding: 70px 0px;
+  background-color: #0404a9; /* Arka plan rengi için örnek (açık gri) */
+  background-image: url('/bulutlu-araka-plan.png'); /* Arka plan resmi eklemek isterseniz */
+  background-size: cover; /* Resmi kapsayacak şekilde ayarla */
+  background-position: center; /* Resmi ortala */
+  min-height: 100vh; /* Sayfa içeriği boyunca tam bir yükseklik sağlar */
+}
+
+.navbar {
+  background-color: #1a237e; /* Lacivert */
+  color: #ffffff; /* Beyaz */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 60%; /* Daire için */
+  margin-right: 10px;
+}
+.title {
+  font-size: 2.5rem; /* Yazı boyutu */
+  font-weight: bold; /* Kalın yazı */
+  margin-bottom: 20px; /* Alt boşluk */
+  color: #ffffff; /* Yazı rengi (örneğin beyaz) */
+  background-color: navy; /* Arka plan rengi (örneğin mavi) */
+  padding: 10px; /* Yazının etrafındaki boşluk */
+  border-radius: 8px; /* Kenar yuvarlama, isteğe bağlı */
+}
+.siteTitle {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navLinks {
+  list-style: none; /* Noktaları kaldır */
+  display: flex; /* Yatay hizalama */
+  gap: 10px; /* Elemanlar arası boşluk */
+}
+
+.navLinks li a {
+  color: white; /* Beyaz yazı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  padding: 5px 10px; /* İçerik için boşluk */
+  transition: background 0.3s; /* Geçiş efekti */
+}
+
+.navLinks li a:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Üzerine gelince arka plan */
+  border-radius: 5px; /* Yuvarlak köşe */
+}
+
+
+
+.title {
+  text-align: center;
+  font-size: 2em;
+  margin: 80px 0 40px; /* Menü yüksekliği için margin ekledik */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 3 kolon */
+  gap: 20px; /* Kartlar arası boşluk */
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.848);
+  padding: 6px; /* Kartın iç kısmı */
+  margin-bottom: 10px; /* Kartların alt kısmındaki boşluğu artır */
+}
+
+.image {
+  width: 7%0;
+  height: 70%;
+  border-radius: 6px;
+}
+
+.eventTitle {
+  font-size: 1.5em; /* Başlık boyutu */
+  margin: 5px 0;
+}
+
+.description {
+  font-size: 0.9em; /* Açıklama boyutu */
+  color: #666;
+  padding: 0 0 5px; /* Aşağıda biraz boşluk bırak */
+}
+
+
+.backButtonContainer {
+  text-align: center;
+  margin: 30px 0; /* Butonun üstüne biraz alan bırak */
+}
+
+.backButton {
+  background-color: #1a237e; /* Lacivert */
+  color: #ffffff; /* Beyaz */
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.backButton:hover {
+  background-color: #0d1f5b; /* Daha koyu lacivert hover efekti */
+}
+.aboutSection {
+  background-color: #1a237e;
+  color: #e7ede9; /* İstediğiniz rengi burada belirleyin */
+  text-align: center; /* Metin ve içerik ortalanacak */
+  padding: px; /* Üst ve alt boşluk */
+  border-radius: 8px; /* Köşeleri yuvarlak yapar */
+  margin: 10px; /* Dış boşluk */
+}
+
+.whatsappButton {
+  background-color: white; /* Beyaz arka plan */
+  color: #25D366; /* WhatsApp yeşil rengi */
+  padding: 10px 20px; /* Butonun iç boşluğu */
+  border: none; /* Kenar çizgisi yok */
+  border-radius: 5px; /* Kenarları yuvarlak */
+  cursor: pointer; /* İmleci değiştirmek için */
+  margin-top: 10px; /* Üstten boşluk */
+  text-decoration: none; /* Alt çizgi yok */
+}
+
+.whatsappButton:hover {
+  background-color: #e0e0e0; /* Hover durumunda arka plan rengi */
+}
+.featuredEventsSection {
+  background-color: #eee6e6; /* Burada istediğiniz arka plan rengini belirleyin */
+  background-image: url('/bulutlu-araka-plan.png'); /* Arka plan resmi eklemek için bu satırı kullanın */
+  background-size: cover; /* Resmi kapsama ayarı */
+  background-position: center; /* Resmin ortalanması */
+  padding: 20px; /* İç boşluk */
+  border-radius: 8px; /* Köşeleri yuvarlak yapar */
+  margin: 20px; /* Dış boşluk */
+  color: #333; /* Metin rengi */
+}
+.sksLink {
+  background-color: #0044cc;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sksLink:hover {
+  background-color: #003399;
+}
